@@ -502,6 +502,20 @@ img#comm {
 	border-bottom: 5px solid rgb(39, 26, 26);
 }
 
+input::selection {
+  background: none;
+}
+input::-moz-selection {
+  background: none;
+}
+input::-webkit-selection {
+  background: none;
+}
+input::-ms-selection {
+  background: none;
+}
+
+
 .smart-button {
 	display: flex;
 }
@@ -520,9 +534,17 @@ img#comm {
 .contract-cont svg {
 	width: 20px;
 	margin-left: 1rem;
+	cursor: pointer;
 	color: white;
 }
+.contract-cont input{
+	margin-left: 0.5rem;
+}
 
+.contract-cont p{
+	font-weight: 700;
+	margin-left: -0.5rem;
+}
 .section-4 {
 	display: flex;
 	flex-direction: column;
@@ -819,11 +841,11 @@ button.buy {
 }
 
 .ca {
-	font-size: 10px;
+	font-family: 'snart';
 	color: white;
 	margin-top: 1rem;
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 2.2rem;
 }
 
 .section-e {
@@ -847,7 +869,7 @@ input {
 	margin-top: 0.5rem;
 	font-weight: 900;
 	font-size: clamp(1.2rem, 8vw - 2rem, 3rem);
-	font-family: snart;
+	font-family: 'snart';
 }
 
 .section-5 {
