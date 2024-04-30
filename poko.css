@@ -250,7 +250,8 @@ main {
 }
 
 .main-text span {
-	font-size: clamp(1rem, 8vw - 2rem, 3rem);	font-family: snart;
+	font-size: clamp(1rem, 8vw - 2rem, 3rem);
+	font-family: snart;
 }
 pre {
 	font-size: 0.9rem;
@@ -365,12 +366,14 @@ h1.bold-text {
 	width: 94%;
 }
 
-img.commerce,
-img.nft,
-img.smart,
-img.exchange {
+.cypimg{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+img.commerce{
 	max-width: 600px;
-	width: 95%;
+	width: 50%;
 	display: block;
 	justify-content: center;
 	display: block;
@@ -379,7 +382,7 @@ img.exchange {
 	margin-top: 4em;
 }
 
-.p2p-loans,
+.poko,
 .nft-insur,
 .smart-1,
 .commerce,
@@ -392,7 +395,7 @@ img#comm {
 	margin-right: -1em;
 }
 
-.p2p-loans span,
+.poko span,
 .nft-insur span,
 .smart-1 span,
 .commerce span,
@@ -400,11 +403,12 @@ img#comm {
 	color: var(--green-color);
 }
 
-.p2p-loans b {
+.poko b {
 	font-weight: 900;
 	/* padding-bottom: 0.2rem; */
 	/* line-height: 2em; */
 	font-size: 4em;
+	color: red;
 	word-spacing: 10px;
 	display: flex;
 	flex-direction: column;
@@ -467,11 +471,9 @@ img#comm {
 .checksmart ul li p {
 	margin-top: -16px;
 }
-.p2p-loans button,
-.nft-insur button,
-.smart-1 button {
+.poko button {
 	border-radius: 50px;
-	margin-top: 5em;
+	margin-top: 1em;
 	color: black;
 	width: 230px;
 	height: 60px;
@@ -496,9 +498,8 @@ img#comm {
 	align-items: center;
 	padding-inline: 20px;
 }
-.contract-cont h2{
+.contract-cont h2 {
 	font-size: 6px;
-	
 }
 .contract-cont svg {
 	width: 20px;
@@ -658,8 +659,8 @@ button.buy {
 	/* margin-top: 3rem; */
 	margin-bottom: -7rem;
 }
-input{
-	background-color: black;
+input {
+	background-color: rgba(0, 0, 0, 0);
 	border: none;
 	outline: none;
 }
@@ -865,20 +866,8 @@ footer p {
 			font-weight: 900;
 		}
 
-		img.commerce,
-		img.nft,
-		img.smart,
-		img.exchange {
-			max-width: 800px;
-			width: auto;
-			margin-top: 4em;
-		}
-
-		.p2p-loans,
-		.nft-insur,
-		.smart-1,
-		.commerce,
-		.exchange {
+		.poko,
+		.commerce {
 			padding: 2em;
 			font-size: 1.7rem;
 		}
@@ -887,23 +876,16 @@ footer p {
 			margin: 0 auto;
 		}
 
-		.p2p-loans span,
-		.nft-insur span,
-		.smart-1 span,
-		.commerce span,
-		.exchange span {
+		.poko span		 {
 			color: var(--green-color);
 		}
 
-		.p2p-loans b,
-		.nft-insur b,
-		.smart-1 b,
-		.commerce b,
-		.exchange b {
+		.poko b {
 			font-weight: 900;
 			padding-bottom: 0.2rem;
 			line-height: 2em;
 			font-size: 1.6em;
+			color: red;
 			word-spacing: 10px;
 			border-bottom: 5px solid #88e900;
 			white-space: nowrap;
@@ -1188,10 +1170,7 @@ img.right-img {
 		font-size: 120%;
 	}
 
-	img.commerce,
-	img.nft,
-	img.smart,
-	img.exchange {
+	img.commerce{
 		width: auto;
 		margin-right: 2em;
 		max-width: 659px;
@@ -1207,11 +1186,7 @@ img.right-img {
 		margin-right: 50px;
 	}
 
-	.p2p-loans,
-	.nft-insur,
-	.smart-1,
-	.commerce,
-	.exchange {
+	.poko {
 		padding-left: 2em;
 		font-size: 1.3rem;
 		width: auto;
@@ -1221,14 +1196,10 @@ img.right-img {
 		margin-top: -10rem;
 	}
 
-	.p2p-loans,
-	.nft-insur {
+	.poko {
 		max-width: 600px;
 	}
-	.commerce-info,
-	.exchange-info {
-		width: 548px;
-	}
+
 	.p2 {
 		width: 548px;
 	}
