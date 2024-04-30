@@ -25,10 +25,8 @@ a {
 	text-decoration: none;
 }
 
-
-
 body {
-	background: #E7BD32;
+	background: #e7bd32;
 	margin: 0;
 	overflow-x: hidden;
 	width: 100%;
@@ -55,8 +53,8 @@ body {
 	text-align: center;
 }
 
-.center img{
-	width: 100%
+.center img {
+	width: 100%;
 }
 
 .centered-text {
@@ -119,8 +117,8 @@ button {
 	align-items: center;
 	justify-content: center;
 	transition: 0.2s ease-in-out;
-	border: 2px solid  rgb(39, 26, 26);
-	border-bottom: 5px solid  rgb(39, 26, 26);
+	border: 2px solid rgb(39, 26, 26);
+	border-bottom: 5px solid rgb(39, 26, 26);
 	border-radius: 30px;
 	width: 130px;
 	height: 50px;
@@ -375,6 +373,7 @@ h1.bold-text {
 }
 
 .cypimg {
+	/* width: 580px; */
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -383,6 +382,7 @@ img.commerce {
 	max-width: 600px;
 	width: 50%;
 	display: block;
+	cursor: pointer;
 	justify-content: center;
 	display: block;
 	margin-left: auto;
@@ -462,7 +462,7 @@ img#comm {
 	padding: 1em;
 	/* flex-direction: column; */
 	/* background-color: #5c8a1700; */
-	border: 5px solid  rgb(39, 26, 26);
+	border: 5px solid rgb(39, 26, 26);
 	border-radius: 20px;
 	margin-inline: 30px;
 	align-items: center;
@@ -499,7 +499,7 @@ img#comm {
 	justify-content: center;
 	font-weight: 700;
 	text-align: center;
-	border-bottom: 5px solid  rgb(39, 26, 26);
+	border-bottom: 5px solid rgb(39, 26, 26);
 }
 
 .smart-button {
@@ -590,19 +590,19 @@ img#comm {
 	color: white;
 }
 
-.card-body h4{
+.card-body h4 {
 	font-size: 2.5rem;
 }
-.card-body p{
+.card-body p {
 	font-family: Space;
 	font-size: 2rem;
 }
 
-.container h1{
+.container h1 {
 	/* display: flex; */
-text-align: center;
-font-family: Space;
-font-size: 3rem;
+	text-align: center;
+	font-family: Space;
+	font-size: 3rem;
 }
 .card-body.p-4 {
 	padding: 30px;
@@ -702,14 +702,12 @@ font-size: 3rem;
 
 .gradient-custom {
 	background: #00b7ff;
-	border: 2px solid  rgb(39, 26, 26);
-
+	border: 2px solid rgb(39, 26, 26);
 }
 
 .gradient-custom-4 {
 	background: #00b7ff;
-	border: 2px solid  rgb(39, 26, 26);
-
+	border: 2px solid rgb(39, 26, 26);
 }
 
 .some h1 {
@@ -910,7 +908,7 @@ footer p {
 	height: 60px;
 	margin-top: 20px;
 	width: 250px;
-	border: 2px solid  rgb(39, 26, 26);
+	border: 2px solid rgb(39, 26, 26);
 	font-weight: 700;
 }
 
@@ -1112,7 +1110,7 @@ footer p {
 	/* margin-top: 1rem; */
 	justify-content: center;
 	align-items: center;
-	background-color: #E7BD32;
+	background-color: #e7bd32;
 }
 
 .green-text {
@@ -1126,7 +1124,7 @@ footer p {
 }
 
 .section-3 {
-	background-color: #E7BD32;
+	background-color: #e7bd32;
 	position: relative;
 	margin-top: 8rem;
 	margin-bottom: 5rem;
@@ -1160,7 +1158,7 @@ img.right-img {
 	.section-12 {
 		display: flex;
 		justify-content: center;
-		background-color: #E7BD32;
+		background-color: #e7bd32;
 	}
 	.whole {
 		background-color: #000000;
@@ -1330,8 +1328,9 @@ img.right-img {
 
 	.section-3 {
 		display: flex;
-		background-color: #E7BD32;
+		background-color: #e7bd32;
 		flex-direction: row-reverse;
+		padding-inline: 20px;
 		align-items: center;
 		justify-content: space-between;
 		flex-wrap: nowrap;
@@ -1350,6 +1349,7 @@ img.right-img {
 	img.commerce {
 		width: auto;
 		margin-right: 2em;
+		width: 200px;
 		max-width: 659px;
 	}
 
@@ -1364,17 +1364,17 @@ img.right-img {
 	}
 
 	.poko {
-		padding-left: 2em;
+		/* padding-left: 2em; */
 		font-size: 1.3rem;
 		width: auto;
 	}
 
 	.commerce {
-		margin-top: -10rem;
+		/* margin-top: -10rem; */
 	}
 
 	.poko {
-		max-width: 600px;
+		max-width: 700px;
 	}
 
 	.p2 {
@@ -1452,9 +1452,20 @@ img.right-img {
 		margin-top: 70px;
 		justify-content: center;
 	}
+	.center p {
+		font-size: 9rem;
+		color: white;
+	}
+	.section-e {
+		margin-top: -2rem;
+	}
+	.main-text span {
+		font-size: clamp(1rem, 8vw - 2rem, 2rem);
+		font-family: snart;
+	}
 	.sect-cont {
 		background-color: #00b7ff;
-		border: 2px solid royalblue;
+		border: 2px solid rgb(0, 0, 0);
 		padding: 40px;
 		margin: 30px;
 		box-shadow: rgba(5, 5, 5, 0.2) 0px 11px 15px 0px,
@@ -1476,6 +1487,17 @@ img.right-img {
 		margin-top: 20px;
 		border: 2px solid royalblue;
 		font-weight: 700;
+	}
+
+	.cypimg {
+		width: 580px;
+	}
+
+	.container.py-5 {
+		margin-inline: 30px;
+	}
+	.container h1 {
+		font-size: 6rem;
 	}
 
 	.buttons {
