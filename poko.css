@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 * {
-	color: white;
+	color: rgb(0, 0, 0);
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -25,8 +25,10 @@ a {
 	text-decoration: none;
 }
 
+
+
 body {
-	background: black;
+	background: #E7BD32;
 	margin: 0;
 	overflow-x: hidden;
 	width: 100%;
@@ -49,8 +51,12 @@ body {
 }
 
 .center {
-	margin-top: 2rem;
+	margin-top: 3rem;
 	text-align: center;
+}
+
+.center img{
+	width: 100%
 }
 
 .centered-text {
@@ -99,23 +105,23 @@ header {
 	display: block;
 }
 .logo img {
-	width: 110px;
+	width: 150px;
 	padding-left: 1rem;
 }
 
 button {
 	font-weight: 900;
 	background-color: #00b7ff;
-	color: rgb(255 128 223 / 1);
+	/* color: rgb(255 128 223 / 1); */
 	cursor: pointer;
 	display: inline-flex;
 	font-size: 2rem;
 	align-items: center;
 	justify-content: center;
 	transition: 0.2s ease-in-out;
-	border: 2px solid rgb(255 128 223 / 1);
-	border-bottom: 5px solid rgb(255 128 223 / 1);
-	border-radius: 50px;
+	border: 2px solid  rgb(39, 26, 26);
+	border-bottom: 5px solid  rgb(39, 26, 26);
+	border-radius: 30px;
 	width: 130px;
 	height: 50px;
 }
@@ -139,13 +145,14 @@ button {
 
 .center p {
 	font-size: 5rem;
+	color: white;
 }
 
 .main-button button.launch,
 .main-button button.docs {
 	font-weight: 700;
 	background-size: contain;
-	background-color: #00b7ff;
+	background-color: #32302a;
 	color: rgb(255, 255, 255);
 	cursor: pointer;
 	display: inline-flex;
@@ -247,6 +254,7 @@ main {
 	justify-content: center;
 	align-items: center;
 	font-size: 2rem;
+	color: white;
 }
 
 .main-text span {
@@ -366,12 +374,12 @@ h1.bold-text {
 	width: 94%;
 }
 
-.cypimg{
+.cypimg {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-img.commerce{
+img.commerce {
 	max-width: 600px;
 	width: 50%;
 	display: block;
@@ -379,7 +387,7 @@ img.commerce{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 4em;
+	margin-bottom: -6em;
 }
 
 .poko,
@@ -408,7 +416,8 @@ img#comm {
 	/* padding-bottom: 0.2rem; */
 	/* line-height: 2em; */
 	font-size: 4em;
-	color: red;
+	color: rgb(39, 26, 26);
+	margin-top: 5rem;
 	word-spacing: 10px;
 	display: flex;
 	flex-direction: column;
@@ -417,9 +426,10 @@ img#comm {
 	font-weight: 900;
 }
 
-.p2p-info {
+.p2p-info p {
 	padding-top: 1em;
 	width: auto;
+	color: rgb(255, 255, 255);
 	font-family: snart;
 	display: flex;
 	max-width: 650px;
@@ -433,7 +443,7 @@ img#comm {
 }
 
 .check {
-	display: flex;
+	/* display: flex; */
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
@@ -441,27 +451,33 @@ img#comm {
 .check ul {
 	list-style: none;
 	margin-top: 40px;
+	/* width: 40%; */
+	/* width: 900px; */
+	flex-wrap: wrap;
+	display: flex;
+	font-size: 3rem;
 }
 .check ul li {
 	display: flex;
-	padding-block: 2em;
-	flex-direction: column;
-	background-color: #5c8a1700;
-	border: 5px solid black;
+	padding: 1em;
+	/* flex-direction: column; */
+	/* background-color: #5c8a1700; */
+	border: 5px solid  rgb(39, 26, 26);
 	border-radius: 20px;
-	font-size: 3rem;
 	margin-inline: 30px;
 	align-items: center;
 	text-align: center;
+	font-size: clamp(1.5rem, 8vw - 2rem, 3rem);
 	margin-bottom: 33px;
 	justify-content: center;
-	max-width: 650px;
+	/* max-width: 650px; */
 }
 
 .check ul li img {
 	padding-right: 1em;
 }
 .check ul li p {
+	color: white;
 	margin-top: 5px;
 	font-family: snart;
 	font-weight: 700;
@@ -472,9 +488,9 @@ img#comm {
 	margin-top: -16px;
 }
 .poko button {
-	border-radius: 50px;
+	border-radius: 30px;
 	margin-top: 1em;
-	color: black;
+	color: rgb(255, 255, 255);
 	width: 230px;
 	height: 60px;
 	font-size: 2rem;
@@ -483,7 +499,7 @@ img#comm {
 	justify-content: center;
 	font-weight: 700;
 	text-align: center;
-	border-bottom: 5px solid rgb(255 128 223 / 1);
+	border-bottom: 5px solid  rgb(39, 26, 26);
 }
 
 .smart-button {
@@ -534,6 +550,166 @@ img#comm {
 	flex-direction: column;
 	justify-content: center;
 	text-align: center;
+}
+
+/* The actual timeline (the vertical ruler) */
+.container {
+	font-family: snart;
+}
+.main-timeline-4 {
+	position: relative;
+	margin-top: 3rem;
+}
+
+/* The actual timeline (the vertical ruler) */
+.main-timeline-4::after {
+	content: "";
+	position: absolute;
+	width: 3px;
+	background-color: #00b7ff;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+/* Container around content */
+.timeline-4 {
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+}
+
+.card {
+	border-radius: 10px;
+}
+
+.card-body ul li {
+	list-style-type: "- ";
+	margin-top: 1rem;
+	color: white;
+}
+
+.card-body h4{
+	font-size: 2.5rem;
+}
+.card-body p{
+	font-family: Space;
+	font-size: 2rem;
+}
+
+.container h1{
+	/* display: flex; */
+text-align: center;
+font-family: Space;
+font-size: 3rem;
+}
+.card-body.p-4 {
+	padding: 30px;
+}
+
+/* The circles on the timeline */
+.timeline-4::after {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -11px;
+	background-color: rgb(39, 26, 26);
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+/* Place the container to the left */
+.left-4 {
+	padding: 0px 40px 20px 0px;
+	left: 0;
+}
+
+/* Place the container to the right */
+.right-4 {
+	padding: 0px 0px 20px 40px;
+	left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left-4::before {
+	content: " ";
+	position: absolute;
+	top: 18px;
+	z-index: 1;
+	right: 30px;
+	border: medium solid rgba(37, 117, 252, 1);
+	border-width: 10px 0 10px 10px;
+	/* border-color: transparent transparent transparent rgba(37, 117, 252, 1); */
+}
+
+/* Add arrows to the right container (pointing left) */
+.right-4::before {
+	content: " ";
+	position: absolute;
+	top: 18px;
+	z-index: 1;
+	left: 30px;
+	border: medium solid rgba(245, 87, 108, 1);
+	border-width: 10px 10px 10px 0;
+	border-color: transparent rgba(245, 87, 108, 1) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right-4::after {
+	left: -14px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+	/* Place the timelime to the left */
+	.main-timeline-4::after {
+		left: 31px;
+	}
+
+	/* Full-width containers */
+	.timeline-4 {
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+	}
+
+	/* Make sure that all arrows are pointing leftwards */
+	.timeline-4::before {
+		left: 60px;
+		border: medium solid white;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent white transparent transparent;
+	}
+
+	/* Make sure all circles are at the same spot */
+	.left-4::after,
+	.right-4::after {
+		left: 18px;
+	}
+
+	.left-4::before {
+		right: auto;
+	}
+
+	/* Make all right containers behave like the left ones */
+	.right-4 {
+		left: 0%;
+	}
+}
+
+.gradient-custom {
+	background: #00b7ff;
+	border: 2px solid  rgb(39, 26, 26);
+
+}
+
+.gradient-custom-4 {
+	background: #00b7ff;
+	border: 2px solid  rgb(39, 26, 26);
+
 }
 
 .some h1 {
@@ -646,6 +822,7 @@ button.buy {
 
 .ca {
 	font-size: 10px;
+	color: white;
 	margin-top: 1rem;
 	text-align: center;
 	font-size: 1.5rem;
@@ -733,7 +910,7 @@ footer p {
 	height: 60px;
 	margin-top: 20px;
 	width: 250px;
-	border: 2px solid royalblue;
+	border: 2px solid  rgb(39, 26, 26);
 	font-weight: 700;
 }
 
@@ -876,7 +1053,7 @@ footer p {
 			margin: 0 auto;
 		}
 
-		.poko span		 {
+		.poko span {
 			color: var(--green-color);
 		}
 
@@ -935,7 +1112,7 @@ footer p {
 	/* margin-top: 1rem; */
 	justify-content: center;
 	align-items: center;
-	background-color: black;
+	background-color: #E7BD32;
 }
 
 .green-text {
@@ -949,7 +1126,7 @@ footer p {
 }
 
 .section-3 {
-	background-color: #394bee;
+	background-color: #E7BD32;
 	position: relative;
 	margin-top: 8rem;
 	margin-bottom: 5rem;
@@ -983,7 +1160,7 @@ img.right-img {
 	.section-12 {
 		display: flex;
 		justify-content: center;
-		background-color: royalblue;
+		background-color: #E7BD32;
 	}
 	.whole {
 		background-color: #000000;
@@ -1153,7 +1330,7 @@ img.right-img {
 
 	.section-3 {
 		display: flex;
-		background-color: #394bee;
+		background-color: #E7BD32;
 		flex-direction: row-reverse;
 		align-items: center;
 		justify-content: space-between;
@@ -1170,7 +1347,7 @@ img.right-img {
 		font-size: 120%;
 	}
 
-	img.commerce{
+	img.commerce {
 		width: auto;
 		margin-right: 2em;
 		max-width: 659px;
