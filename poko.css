@@ -416,7 +416,7 @@ img#comm {
 	/* padding-bottom: 0.2rem; */
 	/* line-height: 2em; */
 	font-size: 4em;
-	color: rgb(39, 26, 26);
+	color: rgb(34, 62, 145);
 	margin-top: 5rem;
 	word-spacing: 10px;
 	display: flex;
@@ -642,7 +642,7 @@ font-size: 3rem;
 	right: 30px;
 	border: medium solid rgba(37, 117, 252, 1);
 	border-width: 10px 0 10px 10px;
-	/* border-color: transparent transparent transparent rgba(37, 117, 252, 1); */
+	border-color: transparent transparent transparent rgb(39, 26, 26);
 }
 
 /* Add arrows to the right container (pointing left) */
@@ -652,9 +652,9 @@ font-size: 3rem;
 	top: 18px;
 	z-index: 1;
 	left: 30px;
-	border: medium solid rgba(245, 87, 108, 1);
+	border: medium solid #00b7ff;
 	border-width: 10px 10px 10px 0;
-	border-color: transparent rgba(245, 87, 108, 1) transparent transparent;
+	border-color: transparent rgb(39, 26, 26) transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
@@ -681,7 +681,7 @@ font-size: 3rem;
 		left: 60px;
 		border: medium solid white;
 		border-width: 10px 10px 10px 0;
-		border-color: transparent white transparent transparent;
+		border-color: transparent rgb(39, 26, 26) transparent transparent;
 	}
 
 	/* Make sure all circles are at the same spot */
