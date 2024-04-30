@@ -537,13 +537,17 @@ input::-ms-selection {
 	cursor: pointer;
 	color: white;
 }
+.contract-cont p{
+	/* width: 2rem;
+	margin-right: 30px; */
+
+}
 .contract-cont input{
-	margin-left: 0.5rem;
+	font-size: 1rem;
 }
 
 .contract-cont p{
 	font-weight: 700;
-	margin-left: -0.5rem;
 }
 .section-4 {
 	display: flex;
@@ -868,7 +872,8 @@ input {
 #ca-num {
 	margin-top: 0.5rem;
 	font-weight: 900;
-	font-size: clamp(1.2rem, 8vw - 2rem, 3rem);
+	margin-left: 0.5rem;
+	font-size: clamp(1.2rem, 8vw - 2rem, 2rem);
 	font-family: 'snart';
 }
 
@@ -1375,6 +1380,15 @@ img.right-img {
 		max-width: 659px;
 	}
 
+	#ca-num {
+		margin-left: 4rem;
+		font-size: 1.6rem;
+	}
+
+	.contract-cont p{
+		font-size: 3.5rem;
+	}
+
 	img.nft {
 		margin: 0;
 	}
@@ -1389,10 +1403,6 @@ img.right-img {
 		/* padding-left: 2em; */
 		font-size: 1.3rem;
 		width: auto;
-	}
-
-	.commerce {
-		/* margin-top: -10rem; */
 	}
 
 	.poko {
