@@ -23,3 +23,17 @@ function copyToClipboard(event) {
     svgElement.innerHTML = originalSVG;
   }, 2000);
 }
+
+window.onload = function() {
+  // Select all images with class 'commerce'
+  var images = document.querySelectorAll('.commerce');
+
+  // Loop through each image
+  for (var i = 0; i < images.length; i++) {
+      // Add click event listener to each image
+      images[i].addEventListener('click', function(event) {
+          // Redirect to the URL specified in the 'data-url' attribute of the clicked image
+          window.location.href = event.target.getAttribute('data-url');
+      });
+  }
+}
