@@ -26,7 +26,7 @@ a {
 }
 
 body {
-	background: #e7bd32;
+	background: #ffffff;
 	margin: 0;
 	overflow-x: hidden;
 	width: 100%;
@@ -101,6 +101,10 @@ header {
 	padding-left: 1rem;
 }
 
+.peace{
+	display: none;
+}
+
 @media screen and (width < 430px) {
 	header {
 		padding-top: 1rem;
@@ -125,7 +129,7 @@ button {
 	border: 2px solid rgb(39, 26, 26);
 	border-bottom: 5px solid rgb(39, 26, 26);
 	border-radius: 30px;
-	width: 100px;
+	width: 120px;
 	height: 50px;
 }
 
@@ -434,7 +438,7 @@ img#comm {
 .p2p-info p {
 	padding-top: 1em;
 	width: auto;
-	color: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 	font-family: snart;
 	display: flex;
 	max-width: 650px;
@@ -482,7 +486,7 @@ img#comm {
 	padding-right: 1em;
 }
 .check ul li p {
-	color: white;
+	color: rgb(0, 0, 0);
 	margin-top: 5px;
 	font-family: snart;
 	font-weight: 700;
@@ -856,7 +860,7 @@ button.buy {
 
 .ca {
 	font-family: "snart";
-	color: white;
+	color: rgb(0, 0, 0);
 	margin-top: 1rem;
 	text-align: center;
 	font-size: 2.2rem;
@@ -917,7 +921,7 @@ input {
 }
 .sect-cont {
 	background-color: #366cb4;
-	border: 2px solid #f1c40f;
+	border: 2px solid rgb(255, 255, 255);
 	padding: 20px;
 	margin: 30px;
 	box-shadow: rgba(5, 5, 5, 0.2) 0px 11px 15px 0px,
@@ -1152,7 +1156,7 @@ button img {
 	/* margin-top: 1rem; */
 	justify-content: center;
 	align-items: center;
-	background-color: #e7bd32;
+	background-color: rgb(255, 255, 255);
 }
 
 .green-text {
@@ -1166,7 +1170,7 @@ button img {
 }
 
 .section-3 {
-	background-color: #e7bd32;
+	background-color: rgb(255, 255, 255);
 	position: relative;
 	margin-top: 8rem;
 	margin-bottom: 5rem;
@@ -1247,7 +1251,7 @@ img.right-img {
 	}
 
 	button {
-		width: 200px;
+		width: 250px;
 		height: 60px;
 		font-size: 3rem;
 		color: white;
@@ -1291,6 +1295,10 @@ img.right-img {
 		height: 45px;
 		font-size: 90%;
 		font-weight: 700;
+	}
+
+	.peace{
+		display: block;
 	}
 
 	.hero-orange {
@@ -1379,7 +1387,7 @@ img.right-img {
 
 	.section-3 {
 		display: flex;
-		background-color: #e7bd32;
+		background-color: rgb(255, 255, 255);
 		flex-direction: row-reverse;
 		padding-inline: 20px;
 		align-items: center;
